@@ -1,0 +1,5 @@
+//PASSAR IMAGENS PARA O BANCO DE DADOS
+
+http://www.devmedia.com.br/armazenando-imagens-no-mysql/32104
+
+http://www.devmedia.com.br/adapter-customizado-do-android-para-insercao-de-imagens-no-sqlite/32844
