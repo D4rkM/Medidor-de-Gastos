@@ -9,11 +9,11 @@
       <ExibirLog Valor="False"/>
     </Configuracoes>
     <Arquivos>
-      <Arq01 Valor="C:\USERS\16254861\DOCUMENTS\MOBILE\PROJETO\BANCO_GASTOMETRO.BRM"/>
-      <Arq02 Valor=""/>
-      <Arq03 Valor=""/>
-      <Arq04 Valor=""/>
-      <Arq05 Valor=""/>
+      <Arq01 Valor="C:\USERS\MAGNO\DOCUMENTS\ANDROID\PROJETO\BANCO\LOGICO_GASTOS.BRM"/>
+      <Arq02 Valor="C:\USERS\16254861\DOCUMENTS\MOBILE\PROJETO\BANCO\LOGICO_GASTOS.BRM"/>
+      <Arq03 Valor="G:\3º SEMESTRE\BANCO DE DADOS\ESCOLA.BRM"/>
+      <Arq04 Valor="G:\3º SEMESTRE\BANCO DE DADOS\ESCOLOA LOG.BRM"/>
+      <Arq05 Valor="G:\3º SEMESTRE\BANCO DE DADOS\LOGICO_ESCOLA.BRM"/>
     </Arquivos>
   </CONFIGURACAO>
 	<AJUDA>

@@ -3,3 +3,17 @@
 http://www.devmedia.com.br/armazenando-imagens-no-mysql/32104
 
 http://www.devmedia.com.br/adapter-customizado-do-android-para-insercao-de-imagens-no-sqlite/32844
+
+https://sqlite.org/datatype3.html
+
+http://www.guj.com.br/t/campo-para-data-no-sqlite/334749/2
+
+https://www.sqlite.org/lang_datefunc.html
+
+https://developer.android.com/guide/topics/ui/layout/relative.html
+
+https://pt.stackoverflow.com/questions/124634/como-obter-a-localiza%C3%A7%C3%A3o-atual-do-dispositivo-android
+
+https://developer.android.com/guide/topics/media/camera.html
+
+https://developer.android.com/training/location/index.html
