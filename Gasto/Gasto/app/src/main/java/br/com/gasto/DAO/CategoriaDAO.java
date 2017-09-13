@@ -40,14 +40,15 @@ public class CategoriaDAO {
         valores.put("descricao", categoria.getDescricao());
         //valores.put("icone", categoria.getIcone());
 
-        db.insert("tbl_categoria", null, valores);
-
+        db.insert("tbl_Categoria", null, valores);
+        db.close();
     }
 
     public void deletarCategoria(Context context, int id){
         SQLiteDatabase db = new DatabaseHelper(context).getWritableDatabase();
 
-        db.delete("tbl_categoria", "_id = ?", new String[]{String.valueOf(id)});
+        db.delete("tbl_Categoria", "_id = ?", new String[]{String.valueOf(id)});
+        db.close();
     }
 
     public ArrayList<Categoria> obterTodas(Context context){
@@ -90,12 +91,31 @@ public class CategoriaDAO {
 
         Categoria cat = new Categoria();
 
+        SQLiteDatabase db = new DatabaseHelper(context).getReadableDatabase();
 
+        Cursor cursor = db.rawQuery("SELECT * FROM tbl_Categoria WHERE _id=?", new String[]{String.valueOf(id)});
+
+        cursor.moveToFirst();
+
+        cat.setCategoria(cursor.getColumnName(2));
+        cat.setDescricao(cursor.getColumnName(3));
+//        cat.setIcone(cursor.getColumnName());
+        db.close();
         return cat;
     }
 
     public void atualizarCategoria(Context context, int id, String nome, String descricao, Image icone){
 
+        SQLiteDatabase db = new DatabaseHelper(context).getWritableDatabase();
+
+        ContentValues valores = new ContentValues();
+
+        valores.put("categoria", nome);
+        valores.put("descricao", descricao);
+        valores.put("icone", icone.getFormat());
+
+        db.update("tbl_Categoria", valores, "_id=?", new String[]{String.valueOf(id)});
+        db.close();
     }
 
 }

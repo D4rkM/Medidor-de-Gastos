@@ -14,4 +14,6 @@ public class ContatoDAO {
         }
         return instance;
     }
+
+
 }

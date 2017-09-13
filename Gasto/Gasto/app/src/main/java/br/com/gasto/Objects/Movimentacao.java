@@ -80,4 +80,5 @@ public class Movimentacao {
     public void setConsumo(Float consumo) {
         this.consumo = consumo;
     }
+
 }

@@ -66,7 +66,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
                 ");" +
 
                 // Criando tabela com a movimentacao
-                "CREATE TABLE tbl_movimentacao(" +
+                "CREATE TABLE tbl_Movimentacao(" +
                     "_id INTEGER PRIMARY KEY," +
                     "idUsuario INTEGER not null," +
                     "idCategoria INTEGER not null," +
@@ -78,14 +78,14 @@ public class DatabaseHelper extends SQLiteOpenHelper{
                 ");" +
 
                 // Criando tabela de Intermedio
-                "CREATE TABLE tbl_intermedio(" +
-                "_id INTEGER PRIMARY KEY," +
-                "idMovimentacao INTEGER," +
-                "idEconomia INTEGER" +
+                "CREATE TABLE tbl_Intermedio(" +
+                    "_id INTEGER PRIMARY KEY," +
+                    "idMovimentacao INTEGER," +
+                    "idEconomia INTEGER" +
                 ");" +
 
                 // Tabela de Economias
-                "CREATE TABLE tbl_economia(" +
+                "CREATE TABLE tbl_Economia(" +
                     "_id INTEGER PRIMARY KEY," +
                     "idTipo_economia INTEGER," +
                     "idIntermedio INTEGER," +
@@ -95,15 +95,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
                     "quantia REAL" +
                 ");" +
 
-                // Criando tabela de Intermedio
-                "CREATE TABLE tbl_intermedio(" +
-                "_id INTEGER PRIMARY KEY," +
-                "idMovimentacao INTEGER," +
-                "idEconomia INTEGER" +
-                ");" +
-
                 // Criando tabela de Categoria de Gastos
-                "CREATE TABLE tbl_categoria(" +
+                "CREATE TABLE tbl_Categoria(" +
                     "_id INTEGER PRIMARY KEY," +
                     "idUsuario INTEGER," +
                     "categoria TEXT not null," +
