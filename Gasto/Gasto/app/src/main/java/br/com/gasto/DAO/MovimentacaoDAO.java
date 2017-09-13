@@ -57,13 +57,13 @@ public class MovimentacaoDAO {
         Cursor cursor = db.rawQuery("SELECT * FROM tbl_Movimentacao WHERE _id=?", new String[]{String.valueOf(id)});
 
         cursor.moveToFirst();
-        
+
 
         db.close();
         return mov;
     }
 
-    public void atualizarUsuario(Context context, int id, String nome, String senha, Bitmap foto){
+    public void atualizarMovimentacao(Context context, int id, String nome, String senha, Bitmap foto){
         SQLiteDatabase db = new DatabaseHelper(context).getWritableDatabase();
 
         ContentValues dados = new ContentValues();
