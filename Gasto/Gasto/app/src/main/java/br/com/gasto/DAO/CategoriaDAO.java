@@ -57,7 +57,7 @@ public class CategoriaDAO {
 
         SQLiteDatabase db = new DatabaseHelper(context).getReadableDatabase();
 
-        String sql = "SELECT * FROM tbl_categoria;";
+        String sql = "SELECT * FROM tbl_Categoria;";
 
 
 

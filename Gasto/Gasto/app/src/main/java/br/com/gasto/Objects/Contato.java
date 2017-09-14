@@ -10,6 +10,7 @@ public class Contato {
     private int idTipoContato;
     private int idUsuario;
     private String nome;
+    private String descricao;
 
     public int get_id() {
         return _id;
@@ -50,7 +51,5 @@ public class Contato {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
-    private String descricao;
 
 }

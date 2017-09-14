@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import br.com.gasto.DataBase.DatabaseHelper;
 import br.com.gasto.Objects.Movimentacao;
 
+
 /**
  * Created by 16254861 on 06/09/2017.
  */
@@ -63,14 +64,18 @@ public class MovimentacaoDAO {
         return mov;
     }
 
-    public void atualizarMovimentacao(Context context, int id, String nome, String senha, Bitmap foto){
+    public void atualizarMovimentacao(Context context, int id, String nome, int idUsuario, int idCategoria, int idIntermedio, Double consumo, String descricao, Bitmap fotoNotaFiscal){
         SQLiteDatabase db = new DatabaseHelper(context).getWritableDatabase();
 
         ContentValues dados = new ContentValues();
 
+        dados.put("consumo", consumo);
+        dados.put("descricao", descricao);
         dados.put("nome", nome);
-        dados.put("senha", senha);
-        dados.put("foto", foto.getByteCount());
+        dados.put("idUsuario", idUsuario);
+        dados.put("idCategoria", idCategoria);
+        dados.put("idIntermedio", idIntermedio);
+        dados.put("fotoNotaFiscal", fotoNotaFiscal.getByteCount());
 
         db.update("tbl_Usuario", dados, "_id=?", new String[]{String.valueOf(id)});
         db.close();
